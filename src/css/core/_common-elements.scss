@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  background-color: var.$background-color-primary;
+  padding-top: calc(68px + 1rem);
+}
+
+a {
+  color: var.$text-color-primary;
+  text-decoration: none;
+}
+
+p {
+  color: var.$text-color-primary;
+}
+
+span {
+  color: var.$button-color-primary;
+  font-size: var.$font-size-small;
+}
+
+.btn {
+  color: var.$button-color-primary;
+  background-color: transparent;
+  border: 1px solid var.$button-color-primary;
+  cursor: pointer;
+  padding: var.$gutter-base * 0.3 var.$gutter-base * 0.6;
+  font-size: var.$font-size-base;
+  border-radius: var.$border-radius;
+  &:hover {
+    background-color: var.$button-color-hover;
+    color: var.$text-color-primary;
+    transition: var.$transition;
+  }
+}
+
+.btn-font-size-medium {
+  font-size: var.$font-size-medium;
+}
+
+.register-btn {
+  color: var.$button-color-primary;
+  background-color: transparent;
+  border: none;
+  font-size: var.$font-size-base;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    color: var.$button-color-hover;
+    border-bottom: 1px solid var.$button-color-hover;
+    transition: var.$transition;
+  }
+}

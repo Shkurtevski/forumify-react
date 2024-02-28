@@ -1,0 +1,44 @@
+@use 'sass:math';
+
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+
+// Font settings
+$font-size-small:            rem-calc(13);
+$font-size-base:             rem-calc(16);
+$font-size-medium:           rem-calc(20);
+$font-size-big:              rem-calc(26);
+
+$heading-size-tiny:          rem-calc(25);
+$heading-size-small:         rem-calc(28);
+$heading-size-medium:        rem-calc(36);
+$heading-size-big:           rem-calc(44);
+$heading-size-bigger:        rem-calc(60);
+
+$font-weight-normal:         400;
+$font-weight-bold:           600;
+$font-weight-base:           $font-weight-normal;
+
+// Size settings
+$gutter-base:                rem-calc(30);
+$border-radius:              0.3rem;
+$card-border-radius:         2rem;
+
+// Text-transform
+$text-transform-uppercase:   uppercase;
+
+// Color settings
+$text-color-primary:         #fff;
+$text-color-secondary:       #353535;
+
+// Background Colors
+$background-color-primary:     #000;
+$background-color-secondary:   rgb(12, 12, 12);
+
+// Button Colors
+$button-color-primary:         #64ffda;
+$button-color-hover:           #00ffc3; 
+
+// Transition
+$transition:                   0.1s;
