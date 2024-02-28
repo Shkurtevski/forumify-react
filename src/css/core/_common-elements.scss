@@ -28,6 +28,7 @@ span {
   cursor: pointer;
   padding: var.$gutter-base * 0.3 var.$gutter-base * 0.6;
   font-size: var.$font-size-base;
+  font-weight: var.$font-weight-bold;
   border-radius: var.$border-radius;
   &:hover {
     background-color: var.$button-color-hover;

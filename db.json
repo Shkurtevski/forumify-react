@@ -1,7 +1,74 @@
 {
-    "forum_posts": [
-        {
-            
-        }
-    ]
+  "forum_posts": [
+    {
+      "id": "1",
+      "title": "Let's play together?",
+      "category": "Gaming",
+      "hashtags": ["#firstpost", "#community", "#gaming"],
+      "description": "Let's play together. Get to know your favorite players and support their journey. Get involved HERE."
+    },
+    {
+      "id": "2",
+      "title": "Lorem Ipsum",
+      "category": "General",
+      "hashtags": ["#gaming", "#tips", "#community"],
+      "description": "Lorem Ipsum Dolor."
+    },
+    {
+      "id": "3",
+      "title": "Exciting news for our community!",
+      "category": "Community Updates",
+      "hashtags": ["#communityupdate", "#announcement", "#excitingnews"],
+      "description": "We're thrilled to announce some exciting updates coming to our community. Stay tuned for more details!"
+    },
+    {
+      "id": "4",
+      "title": "Looking for feedback",
+      "category": "Feedback",
+      "hashtags": ["#feedbackneeded", "#community", "#improvement"],
+      "description": "We value your opinion! Share your thoughts and suggestions with us. Your feedback helps us improve!"
+    },
+    {
+      "id": "5",
+      "title": "Upcoming events",
+      "category": "Events",
+      "hashtags": ["#events", "#community", "#calendar"],
+      "description": "Check out our calendar for upcoming events and activities. Join us for some fun and excitement!"
+    },
+    {
+      "id": "6",
+      "title": "Tips for beginners",
+      "category": "Community Guides",
+      "hashtags": ["#beginnertips", "#newcomers", "#community"],
+      "description": "Are you new to our community? Here are some helpful tips to get you started on the right foot!"
+    },
+    {
+      "id": "7",
+      "title": "Share your favorite moments",
+      "category": "Community Sharing",
+      "hashtags": ["#favoritemoments", "#memories", "#community"],
+      "description": "What's your favorite memory or moment in our community? Share it with us and spread the joy!"
+    },
+    {
+      "id": "8",
+      "title": "Join the conversation",
+      "category": "Discussion",
+      "hashtags": ["#conversationstarter", "#discussion", "#community"],
+      "description": "Looking for interesting discussions? Join us and start a conversation on any topic you like!"
+    },
+    {
+      "id": "9",
+      "title": "Let's celebrate!",
+      "category": "Celebration",
+      "hashtags": ["#celebration", "#milestones", "#community"],
+      "description": "It's time to celebrate! Join us as we commemorate special milestones and achievements together."
+    },
+    {
+      "id": "10",
+      "title": "Inspirational quotes",
+      "category": "Inspiration",
+      "hashtags": ["#inspiration", "#motivation", "#quotes"],
+      "description": "Need some motivation? Check out these inspirational quotes to uplift your spirits and inspire greatness!"
+    }
+  ]
 }
