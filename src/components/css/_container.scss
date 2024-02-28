@@ -1,0 +1,7 @@
+@use "../../css/abstracts/variables" as var;
+@use "../../css/abstracts/mixins" as mix;
+@use "sass:math";
+
+.container {
+  @extend %wrap;
+}

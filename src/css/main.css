@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -5,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 img {
@@ -28,9 +30,28 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.nav .nav-container, .container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1024px) {
+  .nav .nav-container, .container {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.nav .nav-container .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   background-color: #000;
-  padding-top: calc(68px + 1rem);
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -78,4 +99,20 @@ span {
   color: #00ffc3;
   border-bottom: 1px solid #00ffc3;
   transition: 0.1s;
+}
+
+.nav {
+  background-color: rgb(12, 12, 12);
+  position: fixed;
+  width: 100%;
+}
+.nav .nav-container .nav-wrapper {
+  padding: 0.9375rem 0;
+}
+.nav .nav-container .nav-wrapper .logo h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+.nav .nav-container .nav-wrapper .content-wrapper img {
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

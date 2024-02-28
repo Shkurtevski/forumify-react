@@ -1,0 +1,30 @@
+@use "../../css/abstracts/variables" as var;
+@use "../../css/abstracts/mixins" as mix;
+@use "sass:math";
+
+.nav {
+  background-color: var.$background-color-secondary;
+  position: fixed;
+  width: 100%;
+  .nav-container {
+    @extend %wrap;
+    .nav-wrapper {
+      @extend %d-flex-space-between;
+      
+      padding: var.$gutter-base * 0.5 0;
+      .logo {
+        h2 {
+          color: var.$text-color-primary;
+          margin-bottom: 0;
+        }
+      }
+      .content-wrapper {
+        img {
+          background-color: #fff;
+        }
+        .menu-links {
+        }
+      }
+    }
+  }
+}
