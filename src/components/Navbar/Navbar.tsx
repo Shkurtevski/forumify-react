@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
@@ -6,7 +7,9 @@ const Navbar: React.FC = () => {
       <div className="nav-container">
         <div className="nav-wrapper">
           <div className="logo">
-            <h2>Forumify.</h2>
+            <Link to="/">
+              <h2>Forumify.</h2>
+            </Link>
           </div>
           <div className="content-wrapper">
             <button className="btn">Create Post</button>
