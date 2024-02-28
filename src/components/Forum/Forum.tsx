@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ForumPost from "./sub-components/ForumPost";
 import useFetch from "../../custom-hooks/useFetch";
 import { ForumPostType } from "../../interfaces";
@@ -19,7 +19,7 @@ const Forum: React.FC = () => {
   }
 
   return (
-    <section className="Forum">
+    <section className="forum">
       <div className="forum-container">
         <div className="forum-wrapper">
           {forumPosts &&

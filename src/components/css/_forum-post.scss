@@ -1,0 +1,24 @@
+@use "../../css/abstracts/variables" as var;
+@use "../../css/abstracts/mixins" as mix;
+@use "sass:math";
+
+.forum-post {
+  border: 1px solid var.$button-color-primary;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: var.$border-radius;
+  cursor: pointer;
+  .forum-post-inner {
+    h3 {
+      color: var.$text-color-primary;
+    }
+    .category {
+      font-size: var.$font-size-small;
+    }
+    .hashtags-wrapper {
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

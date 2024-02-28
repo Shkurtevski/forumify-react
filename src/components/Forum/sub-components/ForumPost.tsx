@@ -12,7 +12,7 @@ const ForumPost: React.FC<ForumPostType> = ({
       <div className="forum-post-inner">
         <h3>{title}</h3>
         <p>{description}</p>
-        <small>{category}</small>
+        <p className="category">{category}</p>
         <div className="hashtags-wrapper">
           {hashtags.map((hashtag, index) => (
             <span key={index}>{hashtag}</span>

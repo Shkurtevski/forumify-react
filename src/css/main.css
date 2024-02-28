@@ -113,4 +113,25 @@ span {
 .nav .nav-container .nav-wrapper .logo h2 {
   color: #fff;
   margin-bottom: 0;
+}
+
+.forum {
+  padding-top: calc(68px + 1rem);
+}
+
+.forum-post {
+  border: 1px solid #64ffda;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.forum-post .forum-post-inner h3 {
+  color: #fff;
+}
+.forum-post .forum-post-inner .category {
+  font-size: 0.8125rem;
+}
+.forum-post .forum-post-inner .hashtags-wrapper span {
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
