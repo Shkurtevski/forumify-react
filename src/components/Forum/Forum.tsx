@@ -1,14 +1,9 @@
 import React from "react";
 import ForumPost from "./sub-components/ForumPost";
-import useFetch from "../../custom-hooks/useFetch";
-import { ForumPostType } from "../../interfaces";
+import { useForumContext } from "../../contexts/useForumContext";
 
 const Forum: React.FC = () => {
-  const {
-    data: forumPosts,
-    isLoading,
-    error,
-  } = useFetch<ForumPostType[]>("http://localhost:5001/forum_posts");
+  const { forumPosts, isLoading, error } = useForumContext();
 
   if (isLoading) {
     return <h2>Loading...</h2>;
@@ -22,10 +17,13 @@ const Forum: React.FC = () => {
     <section className="forum">
       <div className="forum-container">
         <div className="forum-wrapper">
-          {forumPosts &&
-            forumPosts.map((forumPost) => (
-              <ForumPost key={forumPost.id} {...forumPost} />
-            ))}
+          <div className="forum-content-posts">
+            {forumPosts &&
+              forumPosts.map((forumPost) => (
+                <ForumPost key={forumPost.id} {...forumPost} />
+              ))}
+          </div>
+          <div className="forum-sidebar-menu"></div>
         </div>
       </div>
     </section>
